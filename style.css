@@ -71,10 +71,11 @@ header .navigation ul li a.active {
   text-transform: uppercase;
 }
 .slider .slide_content {
+  max-width: 450px;
   position: absolute;
   top: 50%;
   left: 0;
-  margin-left: 20px;
+  margin-left: 80px;
 }
 .slider ul.slick-dots {
   bottom: 10px;
