@@ -156,4 +156,22 @@ header .navigation ul li a.active {
   display: none;
 }
 
+.prize-council {
+  display: flex;
+  align-items: flex-start;
+  margin: 100px 0;
+}
+.prize-council h1 {
+  text-transform: uppercase;
+  flex-basis: 30%;
+  margin-top: 0;
+}
+.prize-council .prize_council_content {
+  flex-basis: 70%;
+  color: #343A40;
+  margin-top: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 /*# sourceMappingURL=style.css.map */
