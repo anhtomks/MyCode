@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document 101</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel='stylesheet' type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container header_wp">
+      <!-- First menu -->
+      <div class='navigation first_menu'>
+        <ul class="menu">
+          <li><a href="#" class="active">vinfuture foundation</a></li>
+          <li><a href="#">PRIZE COUNCIL</a></li>
+          <li><a href="#">PRIZE & LAUREATES</a></li>
+          <li><a href="#">NOMINATIONS</a></li>
+        </ul>
+      </div>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo">
+      </div>
+      <!-- Secondary menu -->
+      <div class="navigation second_menu">
+        <ul class="menu">
+          <li><a href="#">NEWS & INSIGHTS</a></li>
+          <li><a href="#">EVENTS</a></li>
+          <li><a href="#">OUTREACH ACTIVITIES</a></li>
+          <li><a href="#">faqs</a></li>
+        </ul>
+      </div>
+      <!-- Language switcher -->
+      <div class="language_switcher">
+        <form class="language-switcher-form " method="get" action="#">
+          <select id="language-switcher-select" class="js-language-switcher-select" name="lang">
+            <option value="vi-VN">Vi</option>
+            <option value="en-US">En</option>
+            <option value="de">De</option>
+            <option value="fr">Fr</option>
+            <option value="es-ES">Es</option>
+            <option value="ja">Jp</option>
+          </select>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section id="content_wp">
+    <!-- Slider slick -->
+    <div class="slider">
+      <div class="slider-item">
+        <img src="./img/slider1.jpg" alt="img slider">
+        <div class="slide_content">
+          <p class="title">A GLOBAL SCIENCE AND TECHNOLOGY PRIZE FOR HUMANITY</p>
+          <p class="content_slider">We're now calling for nominations for the VinFuture Prize 2021 </p>
+          <button class="btn btn_slider">read more</button>
+        </div>
+      </div>
+
+      <div class="slider-item">
+        <img src="./img/slider1.jpg" alt="img slider">
+        <div class="slide_content">
+          <p class="title">A GLOBAL SCIENCE AND TECHNOLOGY PRIZE FOR HUMANITY</p>
+          <p class="content_slider">We're now calling for nominations for the VinFuture Prize 2021 </p>
+          <button class="btn btn_slider">read more</button>
+        </div>
+      </div>
+
+      <div class="slider-item">
+        <img src="./img/slider1.jpg" alt="img slider">
+        <div class="slide_content">
+          <p class="title">A GLOBAL SCIENCE AND TECHNOLOGY PRIZE FOR HUMANITY</p>
+          <p class="content_slider">We're now calling for nominations for the VinFuture Prize 2021 </p>
+          <button class="btn btn_slider">read more</button>
+        </div>
+      </div>
+    </div>
+    <!-- Vision -->
+    <div class="vision container">
+      <h1 class="heading-section">our vision</h1>
+      <p class="vision_content">
+        Our vision for the VinFuture Prize is to catalyze meaningful change in everyday lives, i.e., tangible and highly
+        scalable improvements in areas such as productivity, prosperity, connectivity, health, safety, environment,
+        sustainability, as well as the overall happiness of people regardless of their socioeconomic status.
+      </p>
+    </div>
+    <!-- prize categories -->
+    <div class="prize-cat container">
+      <div class="content-promo">
+        <h1 class="heading-section content-promo-item">VinFuture Prize CATEGORIES</h1>
+        <p class="content-promo-item">One Vinfuture Grand Prize - US$ 3 Million & Three Additional Special Vinfuture Prizes - US$ 500,000 Each, Dedicated To:</p>
+        <ul class="list content-promo-item">
+          <li>Developing country innovators</li>
+          <li>Women innovators</li>
+          <li>Outstanding achievements in emerging fields</li>
+        </ul>
+        <a href="#" class="learn-more content-promo-item">Learn more about Nomination Process</a>
+      </div>
+      <div class="video-promo">
+        <video class="vid" autoplay loop>
+          <source src="video.mp4" type='video/mp4' />
+          <img id="alternative" src="alternative.jpg" />
+        </video>
+        <iframe class="vid" id="yt" src="https://www.youtube.com/embed/rTCKB7F8eoU" frameborder="0"
+          allowfullscreen></iframe>
+        <div id="content">
+          <img class="play_btn" src="./img/playicon.png" alt="play"/>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+    $('.slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
+    });
+    // play video click button
+    $(".play_btn").click(function () {
+    $(".video-promo #content").hide();
+    // $("#yt")[0].src += "?autoplay=1";
+    $("#yt")[0].attr('autoplay', true);
+    $("#yt").show();
+    });
+  </script>
+</body>
+
+</html>
