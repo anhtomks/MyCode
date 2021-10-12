@@ -407,7 +407,8 @@ header .navigation ul li a.active {
   font-weight: normal;
 }
 .calendar .ui-datepicker {
-  width: 95%;
+  width: 98%;
+  border: none;
 }
 .calendar .calendar-picker {
   flex-basis: 25%;
@@ -602,6 +603,17 @@ footer .adress .social .social-item.tumblr {
 }
 footer .adress .social .social-item.reddit {
   background: #EF3F4C;
+}
+
+.copy-right {
+  display: flex;
+  justify-content: center;
+}
+.copy-right p {
+  color: #00155c;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

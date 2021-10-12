@@ -445,7 +445,8 @@ header {
     }
   }
   .ui-datepicker {
-    width: 95%;
+    width: 98%;
+    border: none;
   }
   .calendar-picker {
     flex-basis: 25%;
@@ -645,5 +646,15 @@ footer {
         }
       }
     }
+  }
+}
+.copy-right {
+  display: flex;
+  justify-content: center;
+  p {
+    color: $heading-text-color;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: normal;
   }
 }
